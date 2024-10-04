@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Character } from "../interfaces/Character";
 import axios from "axios";
 
-const API_URL = process.env.APP_URL ?? ``;
+const API_URL = process.env.REACT_APP_API_URL ;
 
 const Characters: React.FC = () => {
     const [characters, setCharacters] = useState<Character[]>([]);
@@ -47,4 +47,6 @@ const Characters: React.FC = () => {
         </div>
     );
 
-}
+};
+
+export default Characters;
