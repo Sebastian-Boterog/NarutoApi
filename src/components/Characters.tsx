@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Character } from "../interfaces/Character";
 import axios from "axios";
+import '../styles/Character.css'; 
+
 
 const API_URL = process.env.REACT_APP_API_URL ;
 
